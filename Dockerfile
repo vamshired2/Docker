@@ -10,5 +10,5 @@ COPY Application.java .
 # Compile the Java application
 RUN javac Application.java
 
-# Run the Java application
+# Run the Java application on port 8080
 CMD ["java", "Application"]
