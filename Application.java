@@ -1,4 +1,4 @@
-public class Applicayion {
+public class Application {
     public static void main(String[] args) {
         System.out.println("Hello, Docker!");
         while (true) {  // Keeps the application running
