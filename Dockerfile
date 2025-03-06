@@ -1,14 +1,14 @@
-#Use open JDK as the base image
+# Use OpenJDK as the base image
 FROM openjdk:11
 
-#copy the java file to the container
-COPY Application.java /app/Application.java
-
-#Set  working directory
+# Create an app directory inside the container
 WORKDIR /app
 
-#compile the java application 
+# Copy the Java file to the container
+COPY Application.java .
+
+# Compile the Java application
 RUN javac Application.java
 
-#Run the java application
-CMD [ "java", "Application"]
+# Run the Java application
+CMD ["java", "Application"]
