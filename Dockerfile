@@ -10,5 +10,8 @@ COPY Application.java .
 # Compile the Java application
 RUN javac Application.java
 
-# Run the Java application on port 8080
+# Expose port 8080 for HTTP traffic
+EXPOSE 8080
+
+# Run the Java application
 CMD ["java", "Application"]
